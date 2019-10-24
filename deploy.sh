@@ -3,7 +3,7 @@ SERVER_VERSION=$(jq -r .version  ./server/package.json) #package Json para versi
 WORKER_VERSION=$(jq -r .version  ./worker/package.json)
 docker build -t maracartman/multi-client:latest -t maracartman/multi-client:$CLIENT_VERSION -t maracartman/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t maracartman/multi-server:latest -t maracartman/multi-server:$SERVER_VERSION -t maracartman/multi-server:$SHA -f ./server/Dockerfile ./server
-docker build -t maracartman/multi-worker:latest -t maracartman/multi-worker:$WORKER_VERSION -t maracartman/multi-worker:$SHA -f ./worler/Dockerfile ./worker
+docker build -t maracartman/multi-worker:latest -t maracartman/multi-worker:$WORKER_VERSION -t maracartman/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push maracartman/multi-client:latest #Generar la version latest de forma dinamica
 docker push maracartman/multi-server:latest
 docker push maracartman/multi-worker:latest
