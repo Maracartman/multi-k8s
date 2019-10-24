@@ -1,6 +1,6 @@
 {
   "name": "worker",
-  "version": "1.1.1",
+  "version": "1.2.3",
   "private": true,
   "dependencies": {
     "nodemon": "1.18.3",
