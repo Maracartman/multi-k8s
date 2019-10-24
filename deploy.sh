@@ -18,6 +18,6 @@ kubectl apply -f k8s
 #kubectl set image deployments/client-deployment web=maracartman/multi-client:$SHA
 #kubectl set image deployments/server-deployment server=maracartman/multi-server:$SHA
 #kubectl set image deployments/worker-deployment worker=maracartman/multi-worker:$SHA
-kubectl set image deployments/client-deployment web=maracartman/multi-client:$CLIENT_VERSION
 kubectl set image deployments/server-deployment server=maracartman/multi-server:$SERVER_VERSION
 kubectl set image deployments/worker-deployment worker=maracartman/multi-worker:$WORKER_VERSION
+kubectl set image deployments/client-deployment web=maracartman/multi-client:$CLIENT_VERSION

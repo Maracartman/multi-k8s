@@ -11,7 +11,7 @@ function App() {
       <div className="App">
         <header className="App-header">
           <h1>
-            Wellcome to my first AWS multi container deployment with Docker
+            Wellcome to Fib calculator on GCC kube Clusters sample
           </h1>
           <h3>Fib Calculator Version 2:</h3>
           <img src={logo} className="App-logo" alt="logo" />
