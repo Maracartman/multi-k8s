@@ -15,9 +15,9 @@ docker push maracartman/multi-server:$SERVER_VERSION
 docker push maracartman/multi-worker:$WORKER_VERSION
 kubectl apply -f k8s
 #Probar con las versiones
-kubectl set image deployments/client-deployment web=maracartman/multi-client:$SHA
+#kubectl set image deployments/client-deployment client=maracartman/multi-client:$SHA
 #kubectl set image deployments/server-deployment server=maracartman/multi-server:$SHA
 #kubectl set image deployments/worker-deployment worker=maracartman/multi-worker:$SHA
 kubectl set image deployments/server-deployment server=maracartman/multi-server:$SERVER_VERSION
 kubectl set image deployments/worker-deployment worker=maracartman/multi-worker:$WORKER_VERSION
-#kubectl set image deployments/client-deployment web=maracartman/multi-client:$CLIENT_VERSION
+kubectl set image deployments/client-deployment client=maracartman/multi-client:$CLIENT_VERSION
