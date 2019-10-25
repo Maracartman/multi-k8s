@@ -1,5 +1,4 @@
-#Where to search the certification
-apiVersion: cert-manager.io/v1alpha2
+apiVersion: certmanager.k8s.io/v1alpha1
 kind: ClusterIssuer
 metadata:
   name: letsencrypt-prod
@@ -9,4 +8,4 @@ spec:
     email: "luigi.maracara@gmail.com"
     privateKeySecretRef:
       name: letsencrypt-prod
-      http01: {}
+    http01: {}
