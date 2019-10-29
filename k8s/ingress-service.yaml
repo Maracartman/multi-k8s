@@ -5,15 +5,14 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/rewrite-target: /$1
-    cert-manager.io/cluster-issuer: "letsencrypt-prod-issuer"
-    certmanager.k8s.io/cluster-issuer: "letsencrypt-prod-issuer"
-    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    certmanager.k8s.io/cluster-issuer: "letsencrypt-prod"
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   tls:
     - hosts:
         - k8s-maracartman.com
         - www.k8s-maracartman.com
-      secretName: k8s-maracartman-com-tls-prod
+      secretName: k8s-maracartman-com
   rules:
     - host: k8s-maracartman.com
       http:
