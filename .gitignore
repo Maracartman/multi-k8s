@@ -2,4 +2,4 @@
 
 .DS_Store
 *.json
-/*.yaml
+/issuer-certificate-cat.yaml
